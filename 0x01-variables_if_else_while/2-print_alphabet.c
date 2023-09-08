@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	char k[26] = "abcdefghijklmnopqrstuvwxyz";
+	char k[27] = "abcdefghijklmnopqrstuvwxyz\n";
 	int i;
 
-	for (i = 0; i <= 25; i++)
+	for (i = 0; i <= 26; i++)
 	{
 		putchar(k[i]);
 	}
