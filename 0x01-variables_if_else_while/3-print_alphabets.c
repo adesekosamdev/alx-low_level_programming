@@ -16,5 +16,6 @@ int main(void)
 	{
 		putchar(k[i]);
 	}
+	putchar('\n');
 	return (0);
 }
