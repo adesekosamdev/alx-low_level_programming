@@ -1,49 +1,48 @@
 #include <stdio.h>
+
 /**
- * main - Prints all possible combinations of two two-digit numbers.
+ * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+int i, e, g, h, op1, op2;
 
-	i = 48;
-
-	while (i < 58)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		j = 48;
-		while (j < 58)
+		e = 48;
+		while (e < 58)
 		{
-			k = 48;
-			while (k < 58)
+			i = 48;
+			while (i < 58)
 			{
-				l = 48;
-				while (l < 58)
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					if (((i * 10) + j) < ((k * 10) + l))
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
-						if (i == 57 && j == 56 && k == 57 && l == 57)
-							break;
-						putchar(',');
-						putchar(' ');
-					}
-					l++;
+					putchar(h);
+					putchar(g);
+					putchar(' ');
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
 				}
-				k++;
+				i++;
 			}
-			j++;
+			e++;
 		}
-		i++;
+		g++;
 	}
-	putchar('\n');
-	return (0);
+	h++;
+}
+putchar('\n');
+return (0);
 }
