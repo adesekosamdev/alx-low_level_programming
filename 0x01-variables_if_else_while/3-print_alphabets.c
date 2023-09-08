@@ -5,8 +5,9 @@
 int main(void)
 {	
 	char k[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+	int i;
 	
-	for (int i = 0; i <= 53; i++)
+	for (i = 0; i <= 53; i++)
 	{
 		putchar(k[i]);
 	}

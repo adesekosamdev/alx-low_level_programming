@@ -4,7 +4,9 @@
 /* betty style doc for function main goes there */
 int main(void)
 {	
-	for (int i = 90; i >= 65; i--)
+	int i;
+
+	for (i = 90; i >= 65; i--)
 	{
 		putchar(i);
 	}

@@ -4,14 +4,16 @@
 /* betty style doc for function main goes there */
 int main(void)
 {	
-	for (int i = 48; i < 57; i++)
+	int i;
+
+	for (i = 48; i < 57; i++)
 	{
 		putchar(i);
 		putchar(',');
 		putchar(' ');
 	}
 	
-	for (int i = 0; i <= 1; i++)
+	for (i = 0; i <= 1; i++)
 	{
 		putchar(k[i]);
 	}

@@ -5,8 +5,9 @@
 int main(void)
 {
 	char k[11] = "0123456789\n";
+	int i;
 
-	for (int i = 0; i <= 10; i++)
+	for (i = 0; i <= 10; i++)
 	{
 		putchar(k[i]);
 	}
