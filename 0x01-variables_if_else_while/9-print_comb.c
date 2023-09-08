@@ -9,7 +9,6 @@
  */
 int main(void)
 {	
-	char k[2] = "9\n";
 	int i;
 
 	for (i = 48; i < 57; i++)
@@ -19,9 +18,9 @@ int main(void)
 		putchar(' ');
 	}
 	
-	for (i = 0; i <= 1; i++)
+	for (i = 57; i <= 58; i++)
 	{
-		putchar(k[i]);
+		putchar(i);
 	}
 	return (0);
 }
