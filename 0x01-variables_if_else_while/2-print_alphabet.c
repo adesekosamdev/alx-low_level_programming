@@ -2,12 +2,17 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-{	
-	char k[27] = "abcdefghijklmnopqrstuvwxyz\n";
+{
+	char k[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i <= 28; i++)
+	for (i = 0; i <= 25; i++)
 	{
 		putchar(k[i]);
 	}

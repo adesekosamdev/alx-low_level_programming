@@ -3,12 +3,13 @@
 
 /* betty style doc for function main goes there */
 int main(void)
-{	
+{
+	char k[26] = "zyxwvutsrqponmlkjihgfedcba";
 	int i;
 
-	for (i = 90; i >= 65; i--)
+	for (i = 0; i >= 25; i++)
 	{
-		putchar(i);
+		putchar(k[i]);
 	}
 	putchar('\n');
 	return (0);
