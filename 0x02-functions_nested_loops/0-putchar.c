@@ -1,8 +1,13 @@
 #include "main.h"
-/*
- * Header files included above
- * function main prints _putchar
- * */
+
+/**
+ * main - Prints _putchar
+ * @void: Empty parameter list for main.
+ *
+ * Description: Prints _putchar w/out stdio
+ *
+ * Return: 0 for success
+*/
 
 int main(void)
 {
