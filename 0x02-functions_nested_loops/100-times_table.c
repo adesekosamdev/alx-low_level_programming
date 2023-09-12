@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
- * print_times_table - prints times table up to n
+ * print_times_table - print times table up to input
  *
- * Return: void
+ * Description: Writes times table up to imput not exceeding 15
  *
- **/
+ * @n: size of times table
+ *
+ * Return: Nothing
+ */
 
 void print_times_table(int n)
 {
