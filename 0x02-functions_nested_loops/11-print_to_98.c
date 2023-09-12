@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
- * The function prints all natural numbers from n to 98
- * */
+/**
+ * print_to_98 - print all natural numbers from input to 98
+ * @n: starting point
+ *
+ * Return: void returns nothing.
+ */
 
 void print_to_98(int n)
 {
