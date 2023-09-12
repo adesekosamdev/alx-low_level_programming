@@ -30,4 +30,5 @@ int main(void)
 		}
 	}
 	printf("%i\n", n);
+	return (0);
 }
