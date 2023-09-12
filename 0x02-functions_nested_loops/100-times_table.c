@@ -1,4 +1,4 @@
-#include "min.h"
+#include "main.h"
 
 /**
  * print_times_table - prints times table up to n
