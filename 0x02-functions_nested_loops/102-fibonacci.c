@@ -7,9 +7,10 @@
 
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int c, i;
+	long long int a = 1;
+	long long int b = 2;
+	long long int c;
+	int i;
 
 	printf("%i, %i", a, b);
 
