@@ -14,12 +14,12 @@ int main(void)
 	double c;
 	int i;
 
-	printf("%i, %i", a, b);
+	printf("%f, %f", a, b);
 
 	for (i = 3; i <= 50; i++)
 	{
 		c = a + b;
-		printf(", %i", c);
+		printf(", %f", c);
 		a = b;
 		b = c;
 	}
