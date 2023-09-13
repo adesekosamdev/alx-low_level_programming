@@ -28,7 +28,7 @@ int main(void)
 	a = a / 1000;
 	e = b % 1000;
 	b = b / 1000;
-	
+
 	while (i <= 98)
 	{
 		move = (d + e) / 1000;
