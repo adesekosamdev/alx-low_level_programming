@@ -9,17 +9,17 @@
 
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long c;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long c;
 	int i;
 
-	printf("%li, %li", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
-		printf(", %li", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
