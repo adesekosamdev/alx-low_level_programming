@@ -9,18 +9,18 @@
 
 int main(void)
 {
-	long i, j;
-	long n;
+	long int i, j, l;
+	long int n;
 	int p;
 
 	n = 612852475143;
-	for (i = (n / 2); i >= 2; i--)
+	for (i = 2; i < n; i++)
 	{
-		if (n / i)
+		if ((n % 3) == 0)
 		{
-			for (j = 2; j <= (i / 2); j++)
+			for (j = 2; j < i; j++)
 			{
-				if (i / j)
+				if ((i % j) == 0)
 				{
 					p = 0;
 					break;
@@ -31,11 +31,9 @@ int main(void)
 				}
 			}
 			if (p == 1)
-			{
-				printf("%li\n", i);
-				break;
-			}
+				l = i;
 		}
 	}
+	printf("%li\n", l);
 	return (0);
 }
