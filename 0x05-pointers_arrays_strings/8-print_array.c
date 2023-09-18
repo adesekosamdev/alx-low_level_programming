@@ -14,15 +14,19 @@ void print_array(int *a, int n)
 	int i;
 
 	if (n <= 0)
+	{
 		;
+	}
 
-	if (n == 1)
+	else
+	{
 		printf("%i", a[0]);
 
-	if (n > 1)
-		for (i = 1; i < n; i++)
-		{
-			printf(", %i", a[i]);
-		}
-	printf("\n");
+		if (n > 1)
+			for (i = 1; i < n; i++)
+			{
+				printf(", %i", a[i]);
+			}
+		printf("\n");
+	}
 }
