@@ -1,11 +1,11 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- * print_array - prints n elements of an arrray of integers
- * followed by a new line
- * @a: pointer to array
- * @n: number of elements to print
+ * print_array - print n digits of an array
+ * @a: array to print
+ * @n: number of values to print
+ * Description: prints n digits of array
  * Return: nothing
  **/
 
@@ -13,15 +13,12 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (n >= 1)
+	for (i = 0; i < n; i++)
 	{
-		printf("%i", a[0]);
-
-		if (n > 1)
-			for (i = 1; i < n; i++)
-			{
-				printf(", %i", a[i]);
-			}
-		printf("\n");
+		printf("%d", a[i]);
+		if (i != n - 1)
+			printf(", ");
 	}
+
+	printf("\n");
 }
