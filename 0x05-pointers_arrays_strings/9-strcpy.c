@@ -4,6 +4,7 @@
  * _strcpy - copies one string into another
  * @src: string being copied
  * @dest: string being copied into
+ * Return: nothing
  **/
 
 char *_strcpy(char *dest, char *src)
@@ -12,12 +13,12 @@ char *_strcpy(char *dest, char *src)
 
 	l = 0;
 
-	while (src[l] != '\0')
+	while ((src[l] != '\0'))
 	{
 		l++;
 	}
 
-	for (i = 0; i < l; i++)
+	for (i = 0; i <= l; i++)
 		dest[i] = src[i];
 	return (dest);
 }
