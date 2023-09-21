@@ -20,7 +20,7 @@ char *leet(char *n)
 	{
 		for (j = 0; j < length; j++)
 		{
-			if ((n[i] == before 1[j]) || (n[i] == before 2[j]))
+			if ((n[i] == before1[j]) || (n[i] == before2[j]))
 			{
 				n[i] = after[j];
 			}
