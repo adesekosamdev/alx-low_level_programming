@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
   * leet - encodes a string into 1337
-  * @n: striing
+  * @n: string
   * Return: string encoded
  **/
 
