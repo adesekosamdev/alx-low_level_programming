@@ -27,6 +27,13 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[i] = src[i];
 		}
 	}
+	else if (n > (srclength - 1) && (destlength - 1) >= n)
+	{
+		for (i = 0; i < (destlength - 1); i++)
+		{
+			dest[i] = src[i];
+		}
+	}
 	else
 	{
 		for (i = 0; i < n; i++)
