@@ -7,23 +7,17 @@
  * Return: nothing
  **/
 
-void reverse_array(int *a, int n)
+oid reverse_array(int *a, int n)
 {
-	int i;
-	int j;
-	int r;
-	int rev;
-
-	r = n - 1;
-	rev = 0;
+	int aux = 0, i, j;
 
 	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < (r - i); j++)
-		{
-			rev = a[j + 1];
-			a[j + 1] = a[j];
-			a[j] = rev;
-		}
+	for (j = 0; j < (n - i - 1); j++)
+	{
+	aux = a[j + 1];
+	a[j + 1] = a[j];
+	a[j] = aux;
+	}
 	}
 }
