@@ -6,27 +6,20 @@
  **/
 void print_number(int n)
 {
-	int deg;
-	int temp;
+	unsigned int temp;
+
+	temp = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n = n * -1;
+		temp = n * -1;
 	}
 
-	deg = 1;
-
-	temp = n;
-	while (temp >= 10)
+	if (n / 10 != 0)
 	{
-		deg = deg * 10;
-		temp = temp / 10;
+		print_number(temp / 10);
 	}
 
-	while (deg >= 1)
-	{
-		_putchar(((n / deg) % 10) + '0');
-		deg = deg / 10;
-	}
+	_putchar((temp % 10) + '0');
 }
