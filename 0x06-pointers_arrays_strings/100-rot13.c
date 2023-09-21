@@ -7,20 +7,21 @@
 char *rot13(char *n)
 {
 	int i;
+	int j;
+	int alph_length;
+	char before[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char after[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	i = 0;
+	alph_length = 52;
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		if ((n[i] >= 'A' && n[i] <= 'Z') || (n[i] >= 'a' && n[i] <= 'z'))
+		for (j = 0; j < alph_length; j++)
 		{
-			if ((n[i] > 64 && n[i] < 78) ||(n[i] > 64 && n[i] < 110))
+			if (n[i] == before[j])
 			{
-					n[i] = n[i] + 13;
-			}
-			else
-			{
-				n[i] = n[i] - 13;
+				n[i] = after[j];
+				break;
 			}
 		}
 	}
