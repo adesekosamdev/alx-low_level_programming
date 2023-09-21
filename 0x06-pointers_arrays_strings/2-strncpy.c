@@ -20,27 +20,18 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 	}
 
-	if (n > (destlength - 1) && (srclength - 1) >= n)
+	while (i < n && i < srclength)
 	{
-		for (i = 0; i < (destlength - 1); i++)
+		dest[i] = src[i];
+		i++;
+	}
+	if (n > srclength)
+	{
+		while (i < destlength && i < n)
 		{
-			dest[i] = src[i];
+			dest[i] = '\0';
+			i++;
 		}
 	}
-	else if (n > (srclength - 1) && (destlength - 1) >= n)
-	{
-		for (i = 0; i < (destlength - 1); i++)
-		{
-			dest[i] = src[i];
-		}
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
-		{
-			dest[i] = src[i];
-		}
-	}
-
 	return (dest);
 }
