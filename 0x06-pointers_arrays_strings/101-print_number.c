@@ -7,17 +7,27 @@
 
 void print_number(int n)
 {
-	unsigned int number;
+	int deg;
+	int temp;
 
-	number = n;
 	if (n < 0)
 	{
-	_putchar('-');
-	number = -n;
+		_putchar('-');
+		n = n * -1;
 	}
-	if (number / 10 != 0)
+
+	deg = 1;
+
+	temp = n;
+	while (temp >= 10)
 	{
-	print_number(number / 10);
+		deg = deg * 10;
+		temp = temp / 10;
 	}
-	_putchar((number % 10) + '0');
+
+	while (deg >= 1)
+	{
+		_putchar(((n / deg) % 10) + '0');
+		deg = deg / 10;
+	}
 }
