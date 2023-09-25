@@ -13,8 +13,11 @@ char *_strstr(char *haystack, char *needle)
 	int j;
 	int l;
 	int t;
-	int temp;
 
+	if (!haystack || !needle)
+	{
+		return(NULL); /* handle null pointers*/
+	}
 	for (l = 0; needle[l] != '\0'; l++)
 	{
 	}
@@ -23,26 +26,16 @@ char *_strstr(char *haystack, char *needle)
 	{
 	}
 
-	for (i = 0; haystack[i] != '\0'; i++)
+	for (i = 0; i <= t - l; i++)
 	{
-		if (haystack[i] == needle[0])
+		/* ensure that the remaining length of haystack is at least equal to length of needle */
+		j = 0;
+		while (j < l && haystack[i + j] == needle[j])
 		{
-			/* ensure that the remaining length of haystack is at least equal to length of needle */
-			if ((t - (i + 1)) < (l - 1))
-			{
-				break;
-			}
-			for (j = 1; j < l; j++)
-			{
-				temp = 0;
-				if (haystack[j + i] != needle[j])
-				{
-					break;
-				}
-				temp = 1;
-			}
+
+			j++;
 		}
-		if (temp == 1)
+		if (j == l)
 		{
 			return&(haystack[i]);
 		}
