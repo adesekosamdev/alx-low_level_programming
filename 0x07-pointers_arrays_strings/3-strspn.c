@@ -15,7 +15,6 @@ unsigned int _strspn(char *s, char *accept)
 	int found;
 
 	n = 0;
-
 	for (i =0; s[i] != '\0'; i++)
 	{
 		found = 0;
@@ -27,7 +26,6 @@ unsigned int _strspn(char *s, char *accept)
 				n++;
 				break;
 			}
-
 		}
 		if (found == 0)
 		{
