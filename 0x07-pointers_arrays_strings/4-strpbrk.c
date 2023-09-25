@@ -26,8 +26,8 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (temp == 1)
 		{
-			return&(s[i]);
+			return (&(s[i]));
 		}
 	}
-	return(NULL);
+	return (NULL);
 }
