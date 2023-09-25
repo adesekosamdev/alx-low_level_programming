@@ -37,9 +37,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (j == l)
 		{
-			return&(haystack[i]);
+			return &(haystack[i]);
 		}
 	}
 
-	return(NULL);
+	return (NULL);
 }
