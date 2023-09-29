@@ -5,7 +5,7 @@
   * @n1: base number
   * @n2: iteration
   * Return: boolean
-**/
+  **/
 
 int isprime(unsigned long n1, unsigned long n2)
 {
