@@ -58,7 +58,7 @@ int _strcomp(char *a, char *b)
 }
 
 /**
-  * _is_palindrome - checks if a string is a palindrome
+  * is_palindrome - checks if a string is a palindrome
   * @s: input char
   * Return: 1 if a palindrome, otherwise 0
   *
@@ -66,6 +66,7 @@ int _strcomp(char *a, char *b)
 
 int is_palindrome(char *s)
 {
+
 	int l;
 	char my_rev[1000];
 
