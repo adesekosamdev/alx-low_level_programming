@@ -5,7 +5,7 @@
   * @n1: number to check
   * @n2: number base
   * Return: square or -1
- **/
+  **/
 
 int issqr(unsigned long n1, unsigned long n2)
 {
@@ -28,7 +28,7 @@ int issqr(unsigned long n1, unsigned long n2)
   * _sqrt_recursion - returns the natural square root
   * @n: number
   * Return: squre root
- **/
+  **/
 
 int _sqrt_recursion(int n)
 {

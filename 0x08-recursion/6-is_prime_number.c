@@ -25,10 +25,10 @@ int isprime(unsigned long n1, unsigned long n2)
 }
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime
- * @n: number
- * Return: boolean
- **/
+  * is_prime_number - returns 1 if the input integer is a prime
+  * @n: number
+  * Return: boolean
+  **/
 
 int is_prime_number(int n)
 {

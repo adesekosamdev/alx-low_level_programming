@@ -5,7 +5,7 @@
   * @s: input char
   * Return: length
   *
- **/
+  **/
 
 int _strlen_recursion(char *s)
 {
