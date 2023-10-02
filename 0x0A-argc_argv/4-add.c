@@ -3,8 +3,8 @@
 
 /**
  * main - adds positive numbers
- * @argc: - # of parameters
- * @argv: - array of parameters
+ * @argc:  # of parameters
+ * @argv:  array of parameters
  * Return: 0 if success, 1 or 2 if fail.
  **/
 
@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 
 	term = 0;
 	sum = 0;
-
 	if (argc <= 1)
 	{
 		printf("0\n");
