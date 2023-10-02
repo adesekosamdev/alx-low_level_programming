@@ -5,7 +5,7 @@
  * main - adds positive numbers
  * @argc:  # of parameters
  * @argv:  array of parameters
- * Return: 0 if success, 1 or 2 if fail.
+ * Return: 0 if success, 1 or 2 if fail
  **/
 
 int main(int argc, char *argv[])
