@@ -13,16 +13,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *array;
 	char *charArray;
 
-
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	array = malloc(nmemb * size);
+	array = malloc(size * nmemb);
 	if (array == NULL)
 		return (NULL);
 	charArray = (char *)array;
 	for (i = 0; i < nmemb; i++)
 	{
-		charArray[i] = '0';
+		charArray[i] = 0;
 	}
 	return (array);
 
