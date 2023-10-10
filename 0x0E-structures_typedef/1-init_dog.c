@@ -46,7 +46,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		free(d->name);
 		return;
 	}
-	for (i = 0; d->name[i] != '\0'; i++)
+	for (i = 0; d->owner[i] != '\0'; i++)
 	{
 		d->owner[i] = owner[i];
 	}
