@@ -31,6 +31,7 @@ int _strlen_recursion(char *s)
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int i;
+
 	d->name = malloc(_strlen_recursion(name) + 1);
 	if (d->name == NULL)
 		return;
