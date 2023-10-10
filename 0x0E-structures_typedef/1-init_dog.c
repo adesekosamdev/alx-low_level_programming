@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
   * _strlen_recursion - returns the length of a string.
@@ -29,9 +30,10 @@ int _strlen_recursion(char *s)
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	int i;
 	d->name = malloc(_strlen_recursion(name) + 1);
 	if (d->name == NULL)
-		return (NULL);
+		return;
 	for (i = 0; d->name[i] != '\0'; i++)
 	{
 		d->name[i] = name[i];
@@ -42,11 +44,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	if (d->owner == NULL)
 	{
 		free(d->name);
-		return (NULL);
+		return;
 	}
 	for (i = 0; d->name[i] != '\0'; i++)
 	{
-		d->owner[i] = owner[i]
+		d->owner[i] = owner[i];
 	}
 	d->owner[i] = '\0';
 }
