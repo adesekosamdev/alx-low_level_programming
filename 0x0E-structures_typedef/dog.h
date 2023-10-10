@@ -2,6 +2,13 @@
 
 #define DOG_H
 
+/**
+ * struct dog - a data structure which contains information for dogs
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: name of dog owner
+ */
+
 typedef struct dog
 {
 	char *name;
