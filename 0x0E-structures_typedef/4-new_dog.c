@@ -40,7 +40,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	dog->name = malloc(sizeof(char) *  (_strlen_recursion(name) + 1));
 	if (dog->name == NULL)
+	{
+		free(dog);
 		return (NULL);
+	}
 	for (i = 0; name[i] != '\0'; i++)
 	{
 		dog->name[i] = name[i];
@@ -49,7 +52,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->age = age;
 	dog->owner = malloc(sizeof(char) *  (_strlen_recursion(owner) + 1));
 	if (dog->owner == NULL)
+	{
+		free(dog);
+		free(dog->name);
 		return (NULL);
+	}
 	for (i = 0; owner[i] != '\0'; i++)
 	{
 		dog->owner[i] = owner[i];
