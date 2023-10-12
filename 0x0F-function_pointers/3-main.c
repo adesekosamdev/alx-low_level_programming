@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	int num1, num2, result;
 	int (*ptr)(int a, int b);
 
-	sym = argv[2][0];
 	if (argc != 4)
 	{
 		printf("Error\n");
