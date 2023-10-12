@@ -24,18 +24,19 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (sym != '+' && sym != '-' && sym != '*' && sym != '/' && sym != '%')
+
+	ptr = get_op_func(argv[2]);
+	if (ptr == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+
 	if ((sym == '/' || sym == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-
-	ptr = get_op_func(argv[2]);
 
 	result = ptr(num1, num2);
 	printf("%i\n", result);
