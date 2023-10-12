@@ -20,12 +20,13 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while (ops[i].op != NULL && ops[i].f != NULL)
+	while (i < 5)
 	{
-		if (*s == ops[i].op[0])
-			return (ops[i].f);
+		if (strcmp(s, ops[i].op) == 0)
+		{
+			return (*(ops[i]).f);
+		}
 		i++;
 	}
-	printf("Error\n");
-	exit(99);
+	return (NULL);
 }
