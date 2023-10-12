@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		case 'i':
 			switch (res)
 			{ case 1: printf(", "); }
-			res= 1;
+			res = 1;
 			printf("%i", va_arg(args, int));
 			break;
 		case 'f':
@@ -49,6 +49,6 @@ void print_all(const char * const format, ...)
 			break; }
 		i++;
 	}
-	printf("\n");
+	printf ("\n");
 	va_end(args);
 }
